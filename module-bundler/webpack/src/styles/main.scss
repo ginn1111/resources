@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "variable";
+
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+#root {
+  background-image: url("@public/assets/download.jpeg");
+  padding-top: 50%;
+}
+
+h1 {
+  background: $primary;
+  display: flex;
+  transition: all 4s;
+}
