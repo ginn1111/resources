@@ -1,31 +1,69 @@
-const paths = require("./config/paths");
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const autoprefixer = require("autoprefixer");
+const paths = require('./config/paths')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+const isDevMode = process.env.NODE_ENV === 'development'
+
+function getStyleLoaders(cssOptions, preprocessor) {
+  const loaders = [
+    {
+      loader: isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+    },
+    { loader: 'css-loader', options: cssOptions },
+    {
+      loader: 'postcss-loader',
+      options: {
+        postcssOptions: {
+          plugins: [
+            'postcss-flexbugs-fixes',
+            [
+              'postcss-preset-env',
+              {
+                browsers: 'last 2 versions',
+                autoprefixer: {
+                  flexbox: 'no-2009',
+                },
+              },
+            ],
+            'postcss-normalize',
+          ],
+        },
+      },
+    },
+  ].filter(Boolean)
+
+  if (preprocessor) {
+    loaders.push(preprocessor)
+  }
+
+  return loaders
+}
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
-  mode: "development",
+  mode: isDevMode ? 'development' : 'production',
   entry: {
-    main: "./src/index.js",
+    main: './src/index.js',
   },
   output: {
-    filename: "[name].[contenthash].js",
+    filename: 'static/js/[name].[chunkhash:8].js',
     clean: true,
-    // publicPath: paths.publicUrl,
+    publicPath: paths.publicUrl,
+    chunkFilename: 'static/js/[name].[contenthash].js',
     path: paths.appBuild,
-    assetModuleFilename: "static/media/[name].[hash][ext]",
+    assetModuleFilename: 'static/media/[name].[hash][ext]',
   },
   resolve: {
     alias: {
-      "@public": path.resolve(__dirname, "public"),
+      '@public': path.resolve(__dirname, 'public'),
     },
   },
   devServer: {
-    // static: {
-    //   directory: paths.appPublic,
-    //   publicPath: paths.publicUrl,
-    // },
+    static: {
+      directory: paths.appPublic,
+      publicPath: paths.publicUrl,
+    },
     historyApiFallback: {
       index: paths.publicUrl,
       disableDotRule: true,
@@ -36,15 +74,15 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
         exclude: /node_modules/,
         options: {
           presets: [
-            "@babel/preset-env",
+            '@babel/preset-env',
             [
-              "@babel/preset-react",
+              '@babel/preset-react',
               {
-                runtime: "automatic",
+                runtime: 'automatic',
               },
             ],
           ],
@@ -54,49 +92,22 @@ module.exports = {
         oneOf: [
           {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            type: "asset",
+            type: 'asset',
           },
           {
             test: /\.css$/,
-            use: [
-              "style-loader",
-              "css-loader",
-              {
-                loader: "postcss-loader",
-                options: {
-                  postcssOptions: {
-                    plugins: ["postcss-preset-env", "autoprefixer"],
-                  },
-                },
-              },
-            ],
+            use: getStyleLoaders({
+              importLoaders: 1,
+            }),
           },
           {
             test: /\.s(c|a)ss$/,
-            use: [
-              "style-loader",
-              "css-loader",
+            use: getStyleLoaders(
               {
-                loader: "postcss-loader",
-                options: {
-                  postcssOptions: {
-                    plugins: [
-                      [
-                        "postcss-flexbugs-fixes",
-                        "postcss-preset-env",
-                        {
-                          browsers: "last 2 versions",
-                          autoprefixer: {
-                            flexbox: true,
-                          },
-                        },
-                      ],
-                    ],
-                  },
-                },
+                importLoaders: 2,
               },
-              "sass-loader",
-            ],
+              'sass-loader',
+            ),
           },
         ],
       },
@@ -104,14 +115,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: path.resolve(paths.appPublic, "index.html"),
+      filename: 'index.html',
+      template: path.resolve(paths.appPublic, 'index.html'),
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'static/css/[name].[contenthash].css',
+      chunkFilename: 'static/css/[name].[contenthash].css',
     }),
   ],
   optimization: {
     splitChunks: {
-      chunks: "all",
+      chunks: 'all', // dedup module when has m
     },
-    // runtimeChunk: "single",
+    runtimeChunk: 'single',
   },
-};
+}

@@ -1,10 +1,9 @@
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import "./styles/main.scss";
-import downloadFile from "@public/assets/images/download.jpeg";
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import './styles/main.scss'
+import downloadFile from '@public/assets/images/download.jpeg'
 
 const App = () => {
-  console.log("Hello webpack");
   return (
     <>
       <h1>Hello Webpack</h1>
@@ -24,11 +23,12 @@ const App = () => {
             }
           />
           <Route path="/about" element={<div>about</div>} />
+          <Route path="*" element={<p>Not found</p>} />
         </Routes>
       </BrowserRouter>
     </>
-  );
-};
+  )
+}
 
-const root = createRoot(document.getElementById("root"));
-root.render(<App />);
+const root = createRoot(document.getElementById('root'))
+root.render(<App />)
