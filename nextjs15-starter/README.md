@@ -6,3 +6,4 @@
 2. React Query data fetching and caching
 3. Next-intl for i18n
 4. Next-Auth for authentication
+5. Other quality code tools like eslint, prettier, lintstaged, stylelint
