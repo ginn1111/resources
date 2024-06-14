@@ -1,27 +1,19 @@
 import createMiddleware from "next-intl/middleware";
-import { locales, defaultLocale, getLocale } from "@/i18n";
-import { NextRequest, NextResponse } from "next/server";
+import { locales, defaultLocale, localePrefix } from "@/config";
+import { NextRequest } from "next/server";
 
 export const middleware = (request: NextRequest) => {
-  const { pathname } = request.nextUrl;
+  const handleWithI18n = createMiddleware({
+    locales,
+    localePrefix,
+    defaultLocale,
+  });
 
-  const pathNameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
-  );
+  const response = handleWithI18n(request);
 
-  if (pathNameHasLocale) return;
-
-  const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-
-  console.log("redirect");
-
-  return NextResponse.redirect(request.nextUrl);
+  return response;
 };
 
 export const config = {
-  matchers: [
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    "/(en|vi)/:path*",
-  ],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
