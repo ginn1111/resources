@@ -1,6 +1,6 @@
-import createMiddleware from "next-intl/middleware";
-import { locales, defaultLocale, localePrefix } from "@/config";
-import { NextRequest } from "next/server";
+import createMiddleware from 'next-intl/middleware';
+import { locales, defaultLocale, localePrefix } from '@/config';
+import { NextRequest } from 'next/server';
 
 export const middleware = (request: NextRequest) => {
   const handleWithI18n = createMiddleware({
@@ -15,5 +15,5 @@ export const middleware = (request: NextRequest) => {
 };
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
