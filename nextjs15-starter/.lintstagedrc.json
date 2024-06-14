@@ -1,3 +1,5 @@
 {
-  "*": ["bun lint", "bun fmt"]
+  "*.json": ["prettier --write ."],
+  "*.{js,jsx,ts,tsx}": ["eslint", "prettier --write ."],
+  "*.{css,scss,sass}": ["stylelint **/*.{css,scss,sass}", "prettier --write ."]
 }
