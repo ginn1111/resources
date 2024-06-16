@@ -2,7 +2,6 @@ import { AuthOptions } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 
 const authOptions: AuthOptions = {
-  secret: 'RMd6teQG2PWKi0md+N872Arml1APhQtUGwqoZRAe0Q0=',
   providers: [
     Credentials({
       name: 'credentials',
@@ -26,21 +25,20 @@ const authOptions: AuthOptions = {
     }),
   ],
   callbacks: {
-    signIn(params) {
-      console.log('call in signin cb');
-      console.log(params);
-      return true;
+    jwt({ token, user }) {
+      if (user) {
+        // eslint-disable-next-line no-param-reassign
+        token.id = new Date().getTime();
+      }
+      return token;
     },
-    jwt(params) {
-      console.log('call in jwt cb');
-      console.log(params);
-      return params.token;
-    },
-    session(params) {
-      console.log('call in session cb');
-      console.log(params);
+    session({ session, token }) {
+      if (token) {
+        // eslint-disable-next-line no-param-reassign
+        session.jwt = token.id.toString();
+      }
 
-      return params.session;
+      return session;
     },
   },
   pages: {
