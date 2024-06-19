@@ -1,25 +1,56 @@
 module.exports = {
   app_shell: {
+    name: 'app_shell',
     port: 3000,
   },
   checkout_app: {
+    name: 'checkout_app',
     port: 3001,
   },
   product_app: {
+    name: 'product_app',
     port: 3002,
   },
   shared_store: {
+    name: 'shared_store',
     port: 3003,
-  },
-  remotes: {
-    checkout_app: {},
-    product_app: {},
-    shared_store: {},
   },
   exposes: {
     checkout_app: {},
-    product_app: {},
-    shared_store: {},
+    product_app: {
+      './App': './src/App',
+    },
+    shared_store: {
+      './store': './src/bootstrap',
+    },
   },
-  fileName: "remoteEntry.js",
+  shared: {
+    shared_store: {
+      effector: {
+        singleton: true,
+        eager: true,
+      },
+      'effector-react': {
+        singleton: true,
+      },
+    },
+    product_app: {
+      ...this.shared_store,
+      react: {
+        singleton: true,
+      },
+      'react-dom': { singleton: true },
+    },
+    app_shell: {
+      ...this.shared_store,
+      react: {
+        singleton: true,
+      },
+      'react-dom': { singleton: true },
+    },
+  },
+  fileName: 'remoteEntry.js',
+  getRemoteEntry(name) {
+    return `${name}@//localhost:${this[name].port}/${this.fileName}`;
+  },
 };
