@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: ['./src/**/*.{html,js,jsx,vue}', './public/index.html'],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(500px, 1fr))',
+      },
+    },
   },
   plugins: [],
 };
