@@ -11,15 +11,16 @@ export const { initStore, addToCart, removeFromCart, update } = createApi(
   {
     initStore: (_, store) => store,
     addToCart: ({ cart, productList }, item) => {
-      console.log(productList, item);
       const product = productList.find((p) => p.id === item.id);
 
       const existItem = cart.find((c) => c.id === item.id);
 
+      console.log(123);
+
       if (existItem) {
         existItem.amount++;
       } else {
-        cart.push(item);
+        cart.push({ ...product, ...item });
       }
 
       product.amount--;

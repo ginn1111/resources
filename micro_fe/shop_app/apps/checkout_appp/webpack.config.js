@@ -4,6 +4,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
+const { ModuleFederationPlugin } = require('webpack').container;
 const mfeConfig = require('@repo/configs/mfe.config');
 
 const isProduction = process.env.NODE_ENV == 'production';
@@ -19,12 +20,25 @@ const config = {
   },
   devServer: {
     port: mfeConfig.checkout_app.port,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      excludeChunks: [mfeConfig.checkout_app.name],
     }),
     new VueLoaderPlugin(),
+    new ModuleFederationPlugin({
+      name: mfeConfig.checkout_app.name,
+      filename: mfeConfig.fileName,
+      remotes: {
+        shared_store: mfeConfig.getRemoteEntry('shared_store'),
+      },
+      exposes: mfeConfig.exposes.checkout_app,
+      shared: mfeConfig.shared.checkout_app,
+    }),
   ],
   resolve: {
     extensions: [

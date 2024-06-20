@@ -14,6 +14,9 @@ const config = {
   },
   devServer: {
     port: mfeConfig.shared_store.port,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   resolve: {
     extensions: [

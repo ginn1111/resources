@@ -2,6 +2,7 @@ import '../public/assets/style.css';
 import '@repo/configs/tailwind.global.css';
 
 import React, { Suspense } from 'react';
+import WrappedVue from './components/WrappedVue';
 const ProductApp = React.lazy(() => import('product_app/App'));
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
           <ProductApp />
         </Suspense>
       </div>
-      <div className="flex-1">Checkout app</div>
+      <div className="border-2 border-[#42b983] relative">
+        <p className="absolute bg-[#42b983] left-0 px-2 py-1 text-white">Vue</p>
+        <WrappedVue />
+      </div>
     </main>
   );
 };

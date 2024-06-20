@@ -30,6 +30,7 @@ const config = {
       name: mfeConfig.app_shell.name,
       remotes: {
         product_app: mfeConfig.getRemoteEntry('product_app'),
+        checkout_app: mfeConfig.getRemoteEntry('checkout_app'),
       },
       shared: mfeConfig.shared.app_shell,
     }),

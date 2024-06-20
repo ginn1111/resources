@@ -16,7 +16,9 @@ module.exports = {
     port: 3003,
   },
   exposes: {
-    checkout_app: {},
+    checkout_app: {
+      './App': './src/ExportApp',
+    },
     product_app: {
       './App': './src/App',
     },
@@ -33,6 +35,17 @@ module.exports = {
       'effector-react': {
         singleton: true,
       },
+      'effector-vue': {
+        singleton: true,
+      },
+    },
+    checkout_app: {
+      ...this.shared_store,
+      react: {
+        singleton: true,
+      },
+      'react-dom': { singleton: true },
+      vue: { singleton: true, eager: true },
     },
     product_app: {
       ...this.shared_store,
@@ -47,6 +60,7 @@ module.exports = {
         singleton: true,
       },
       'react-dom': { singleton: true },
+      vue: { singleton: true, eager: true },
     },
   },
   fileName: 'remoteEntry.js',
