@@ -218,26 +218,28 @@ class AVLTree {
         root = root.right;
       } else if (root.right == null) {
         root = root.left;
+      } else {
+        const leftMost = this.findLeftMost(root.right);
+
+        root!.value = leftMost.value;
+
+        this._delete(root.right, leftMost.value);
       }
-
-      const leftMost = this.findLeftMost(root!.right!);
-
-      root!.value = leftMost.value;
-
-      this._delete(root!.right, leftMost.value);
     }
 
-    this.calcHeight(root!);
-    if (this.isLeftCase(root!, val)) {
-      return this.rightRotate(root!);
-    } else if (this.isRightCase(root!, val)) {
-      return this.leftRotate(root!);
-    } else if (this.isLeftRightCase(root!, val)) {
-      root!.left = this.leftRotate(root!.left!);
-      return this.rightRotate(root!);
-    } else if (this.isRightLeftCase(root!, val)) {
-      root!.right = this.rightRotate(root!.right!);
-      return this.leftRotate(root!);
+    if (root == null) return null;
+
+    this.calcHeight(root);
+    if (this.isLeftCase(root, val)) {
+      return this.rightRotate(root);
+    } else if (this.isRightCase(root, val)) {
+      return this.leftRotate(root);
+    } else if (this.isLeftRightCase(root, val) && root.left) {
+      root.left = this.leftRotate(root.left);
+      return this.rightRotate(root);
+    } else if (this.isRightLeftCase(root, val) && root.right) {
+      root.right = this.rightRotate(root.right);
+      return this.leftRotate(root);
     }
 
     return root;

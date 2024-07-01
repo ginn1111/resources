@@ -9,4 +9,5 @@ avlTree.insert(4);
 avlTree.insert(5);
 avlTree.insert(6);
 avlTree.delete(5);
+avlTree.delete(6);
 avlTree.preOrder();
