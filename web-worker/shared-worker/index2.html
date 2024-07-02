@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shared Worker</title>
+    <script>
+      const worker = new SharedWorker('./worker.js');
+
+      worker.port.onmessage = (e) => {
+        console.log('from index2.html receive from worker', e)
+        msg.textContent = e.data
+      }
+
+      worker.port.postMessage("hello from index2")
+    </script>
+  </head>
+  <body>
+    <h1>Index2</h1>
+    <p id='msg'></p>
+  
+  </body>
+</html>
