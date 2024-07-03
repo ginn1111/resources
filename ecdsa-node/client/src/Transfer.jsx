@@ -1,31 +1,50 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import server from "./server";
+import { toHex } from "ethereum-cryptography/utils";
+import { getPublicKeyFromPrivateKey, hashAndSignMsg } from "./utils";
 
-function Transfer({ address, setBalance }) {
+function Transfer({ setBalance, privateKey }) {
   const [sendAmount, setSendAmount] = useState("");
   const [recipient, setRecipient] = useState("");
 
   const setValue = (setter) => (evt) => setter(evt.target.value);
 
-  async function transfer(evt) {
-    evt.preventDefault();
+  async function handleTransfer(e) {
+    e.preventDefault();
+
+    if (!privateKey) {
+      alert("Not authenticated!");
+      return;
+    }
+
+    if (!sendAmount) {
+      alert("Enter amount please!");
+      return;
+    }
+
+    const { message, signature } = hashAndSignMsg(
+      JSON.stringify({ sendAmount, recipient }),
+      privateKey,
+    );
 
     try {
-      const {
-        data: { balance },
-      } = await server.post(`send`, {
-        sender: address,
-        amount: parseInt(sendAmount),
-        recipient,
+      const response = await server.post(`send`, {
+        signature: {
+          r: `0x${signature.r.toString(16)}`,
+          s: `0x${signature.s.toString(16)}`,
+          recovery: signature.recovery,
+        },
+        message,
+        publicKey: `0x${toHex(getPublicKeyFromPrivateKey(privateKey))}`,
       });
-      setBalance(balance);
+      setBalance(response.data);
     } catch (ex) {
-      alert(ex.response.data.message);
+      console.log(ex);
     }
   }
 
   return (
-    <form className="container transfer" onSubmit={transfer}>
+    <form className="container transfer" onSubmit={handleTransfer}>
       <h1>Send Transaction</h1>
 
       <label>
