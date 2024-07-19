@@ -1,0 +1,19 @@
+{
+  "name": "notify-telegram",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node-telegram-bot-api": "^0.64.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "puppeteer": "^22.13.0"
+  }
+}

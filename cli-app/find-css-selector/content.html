@@ -1,0 +1,1279 @@
+<!DOCTYPE html><html lang="vi"><head>
+  <link rel="preload" href="/web/css/home.page.css" as="style">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/web/js/bundle_1646197549045.js" defer=""></script>
+  <link rel="shortcut icon" href="/web/images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+  <link rel="stylesheet" href="/web/css/home.page.css" type="text/css">
+  <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/mobile-detect.min.js"></script>
+
+  <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/jquery.validate.min.js"></script>
+  <meta property="og:image" content="https://sbx.payme.vn/web/images/Thumb_PayLink.png">
+  <meta property="twitter:image" content="https://sbx.payme.vn/web/images/Thumb_PayLink.png">
+  <meta property="og:title" content="Nền Tảng Tài Chính Nhúng - PayME">
+  <meta property="og:description" content="Nền tảng thanh toán hiệu quả số 1 Việt Nam cho SHOP bán hàng Online, Facebook, Livestream, Tiktok, Shopify.">
+  <meta name="description" content="Nền tảng thanh toán hiệu quả số 1 Việt Nam cho SHOP bán hàng Online, Facebook, Livestream, Tiktok, Shopify.">
+  <meta name="keywords" content="PayME, Ví điện tử, Social Payment, Open eWallet, PayME Link, PayME POS, Payout, PayME Subscription,PayME Credit, Paynet, Payment Link, PayME Key, Ví điện tử mở, Link thanh toán, thanh toán qua mạng xã hội, yêu cầu thanh toán.">
+  <meta property="og:image:alt" content="PayME thumbnail">
+
+  <title>
+    Nền Tảng Tài Chính Nhúng - PayME
+  </title>
+
+  <link rel="preload" href="/web/images/payme-link-v2/art-b-1.png" as="image">
+  <link rel="preload" href="/web/images/payme-link-v2/art-b-1_blur.png" as="image">
+<style type="text/css">.ac-widget {position:fixed; top: 50%; right: -50px; display: block;width: 150px;height: 40px;transform: rotate(-90deg); background-image: url("https://assurance.sysnetgs.com/img/thumb.png");background-size: contain; background-repeat: no-repeat; background-position: center; border-top-left-radius: 3px; border-top-right-radius: 3px; box-shadow: 0 1px 0 8px white,0 0 0 9px hsl(0, 0%, 90%),-2px -4px 12px rgba(0, 0, 0, 0.2); cursor: pointer;}</style></head>
+
+<body style="overflow: auto;">
+  <header id="myHeader">
+  <div class="container">
+    <div class="row header">
+      <div class="col-auto">
+        <a class="logo" href="/web/home">
+          <img width="100%" height="100%" src="/web/images/open1/new-logo.svg" alt="logo" srcset="">
+        </a>
+      </div>
+      <div class="col-xl buttons">
+        <div class="w-100 d-flex align-items-center">
+          <a href="/web/paymelink" class="button-v2 ">
+            PayME Link
+          </a>
+
+          <a href="/web/payme-pos" class="button-v2 ">
+            PayME POS
+          </a>
+
+          <a href="/web/payout" class="button-v2 ">
+            PayOut
+          </a>
+          <a href="/web/payme-subscription" class="button-v2 ">
+            PayME Subscription
+          </a>
+          <!-- <a href="/web/payme-credit"
+            class="button-v2 ">
+            PayME Credit
+          </a> -->
+
+          <div class="drop-down-menu" id="menu-product" lazy-image="div" lazy-image-type="img">
+            <div id="btn-menu-product" class="button-v2 ">
+              Solutions
+            </div>
+            <div class="list-item-drop-product d-none">
+              <div class="arrow-down"></div>
+              <a href="/web/paynet" class="item-drop">
+                <div class="icon-menu">
+                  <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/menu/icon-payout.svg" alt="">
+                </div>
+                <div class="content-menu ">
+                  <span class="d-flex align-items-center">
+                    Whitelabel wallet
+                    <span><i class="icon-left fas fa-arrow-right"></i></span></span>
+                  <span> Ví điện tử mở cho doanh nghiệp của bạn </span>
+                </div>
+              </a>
+              <a class="item-drop" data-toggle="modal" data-target="#idPendingBlockModal" href="#">
+                <div class="icon-menu">
+                  <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/menu/icon-paymepage.svg" alt="">
+                </div>
+                <div class="content-menu">
+                  <span class="d-flex align-items-center">
+                    Whitelabel gateway
+                    <span><i class="icon-left fas fa-arrow-right"></i></span></span>
+                  <span> Phát triển cổng thanh toán bằng PayME SDK </span>
+                </div>
+              </a>
+              <!-- <a
+                class="item-drop"
+                data-toggle="modal"
+                data-target="#idPendingBlockModal"
+              >
+                <div class="icon-menu">
+                  <img src="/web/images/menu/icon-api.svg" alt="" />
+                </div>
+                <div class="content-menu">
+                  <span class="d-flex align-items-center"> Gateway with API <span><i class="icon-left fas fa-arrow-right"></i></span></span>
+                  <span> Tích hợp API thanh toán vào hệ thống của bạn </span>
+                </div>
+              </a> -->
+            </div>
+          </div>
+
+          <!-- <a class="btn-started" href="https://mc.payme.vn/signup">
+            Get started
+            <img class="btn-started-icon" src="/web/images/open1/started-icon.svg" alt="started-icon" />
+          </a> -->
+        </div>
+
+        <div class="position-relative mt-auto mb-auto">
+
+        </div>
+      </div>
+      <div class="div-sign-up div-sign-up-mobile">
+        <div class="position-relative mt-auto mb-auto"></div>
+        <div class="mt-auto mb-auto">
+          <a class="btn-signup btn-outline-primary-v2 " href="/web/wallet">
+            <div class="btn-download">
+              <span>Download</span>
+              <img class="payme-icon-img" width="100%" height="100%" src="/web/images/open1/payme-logo.svg" alt="download-icon">
+            </div>
+            <img class="icon-download-btn ml-1" width="100%" height="100%" src="/web/images/open1/arrow-downward-black.png" alt="download-icon">
+          </a>
+        </div>
+      </div>
+      <div class="pushbar_main_content col-auto">
+        <div class="menu-btn" data-pushbar-target="mypushbar1">
+          <span class="menu-btn__burger"> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- /.modal -->
+<!-- Facebook Pixel Code -->
+<script load-type="before" type="lazyloadscript" data-script-type="text/javascript">
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
+  fbq("init", "4248213575226154");
+  fbq("track", "PageView");
+</script>
+<noscript><img height="1" width="1" style="display: none"
+    src="https://www.facebook.com/tr?id=4248213575226154&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+ <main id="paymelink-id" class="payme-link-v2-page">
+  <section class="section-back cls-padding">
+
+    <section class="section-one">
+      <div class="paymeLinkScan">
+        <div class="container">
+          <div class="row">
+            <h1 class="col-sm-12 col-12 title-link-scan">
+              Nền tảng thanh toán hiệu quả số 1 Việt Nam
+            </h1>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="paymelinkScan-left">
+                <h2 class="title-link-scan-sub">
+                  cho SHOP bán hàng Online, Facebook, Livestream, Tiktok, Shopify
+                </h2>
+                <p class="description-title">
+                  Doanh số bán hàng của bạn sẽ tăng mạnh khi sử dụng các giải pháp thanh toán của PayME.
+                </p>
+                <div class="button-payme-link btn-hover__push"><a class="button-payme-link__text" href="https://mc.payme.vn/" target="_blank">
+                    Sử dụng ngay<img width="22" height="18" alt="arrow-left-icon" src="/web/images/open1/paymepos/invalid-name.png">
+                  </a></div>
+                <hr class="break-line">
+                <div class="approach">
+                  <div class="title-approach">
+                    Bạn có cơ hội tiếp cận và phục vụ đến:
+                  </div>
+                  <div class="data-approach">
+                    <div class="data-approach-item">
+                      <div class="amount-approach">104<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">tài khoản ngân hàng</p>
+                    </div>
+                    <div class="data-approach-item">
+                      <div class="amount-approach">96<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        thẻ ATM
+                      </p>
+                    </div>
+                    <div class="data-approach-item">
+                      <div class="amount-approach">40<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        thẻ Visa/Master/JCB
+                      </p>
+                    </div>
+                    <div class="data-approach-item pr-0 boder-right-none">
+                      <div class="amount-approach">50<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        người dùng App của 33 ngân hàng
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="position-relative" style="pointer-events: none">
+                <div class="paymelinkScan-right">
+                  <!-- <lottie-player
+                    class="lottie-player"
+                    id="lottie-player"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    src="/web/videos/PayME_Link_B1.json"
+                    autoPlay
+                  ></lottie-player>-->
+
+                  <img width="100%" height="100%" class="image-static-preview" src="/web/images/payme-link-v2/art-b-1.png">
+
+                  <svg lazy-class-remove="image-static-preview" lazy-image="svg" lazy-image-type="image" class="anim-b1 d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" preserveAspectRatio="xMidYMid meet" style="
+                      width: 100%;
+                      height: 100%;
+                      content-visibility: visible;
+                      opacity: 0;
+                    ">
+                    <g clip-path="url(#__lottie_element_2)">
+                      <g id="Group-42" transform="matrix(1,0,0,1,5,11)" opacity="0.9999999994919889" style="display: block">
+                        <image width="692px" height="674px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-1.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="shadow" transform="matrix(1,0,0,1,106.5,61)" opacity="1" style="display: block">
+                        <image width="405px" height="630px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-2.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="home-main" transform="matrix(1,0,0,1,141,142.5)" opacity="1" style="display: block">
+                        <image width="338px" height="541px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-3.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="bubble" transform="matrix(1,0,0,1,28.5,350.5)" opacity="1" style="display: block">
+                        <image width="137px" height="321px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-4.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="Menu" clip-path="url(#__lottie_element_22)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block">
+                        <g id="Rectangle" transform="matrix(1,0,0,1,354,369)" opacity="1" style="display: block">
+                          <image width="305px" height="308px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-5.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="box-menu" transform="matrix(1,0,0,1,400.75,396)" opacity="1" style="display: block">
+                          <image width="58px" height="58px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-6.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="box-menu" transform="matrix(1,0,0,1,400.5,456.5)" opacity="1" style="display: block">
+                          <image width="58px" height="59px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-7.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="box-menu" transform="matrix(1,0,0,1,400.5,519.5)" opacity="1" style="display: block">
+                          <image width="58px" height="58px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-8.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="menu-line" transform="matrix(1,0,0,1,457.25,403.25)" opacity="1" style="display: block">
+                          <image width="159px" height="42px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-9.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="menu-line" transform="matrix(1,0,0,1,457.25,465)" opacity="1" style="display: block">
+                          <image width="159px" height="42px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-9.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="menu-line" transform="matrix(1,0,0,1,457.25,526)" opacity="1" style="display: block">
+                          <image width="159px" height="42px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-9.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                        <g id="Button_thanhtoan" transform="matrix(1,0,0,1,495,577)" opacity="1" style="display: block">
+                          <image width="112px" height="33px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-10.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                          </image>
+                        </g>
+                      </g>
+                      <g id="ic-tiktok" transform="matrix(1,0,0,1,151,525)" opacity="0.9999999931838716" style="display: block">
+                        <image width="47px" height="39px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-11.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="ic-facebook" transform="matrix(1,0,0,1,124,307)" opacity="1" style="display: block">
+                        <image width="69px" height="45px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-12.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                      <g id="ic-cart-shop" transform="matrix(1,0,0,1,456,305)" opacity="0.9999999984620851" style="display: block">
+                        <image width="80px" height="80px" preserveAspectRatio="xMidYMid slice" lazy-url="/web/animations/payme_link_B1/art-b1-13.png" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        </image>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="approach-mobile">
+                <div class="title-approach">
+                  Bạn có cơ hội tiếp cận và phục vụ đến:
+                </div>
+                <div class="data-approach">
+                  <div class="data-approach-top">
+                    <div class="data-approach-item">
+                      <div class="amount-approach">104<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        tài khoản ngân hàng
+                      </p>
+                    </div>
+                    <div class="bor-s"></div>
+                    <div class="data-approach-item">
+                      <div class="amount-approach">96<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        thẻ ATM
+                      </p>
+                    </div>
+                  </div>
+                  <div class="data-approach-bottom">
+                    <div class="data-approach-item">
+                      <div class="amount-approach">40<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach">
+                        thẻ Visa/Master/JCB
+                      </p>
+                    </div>
+                    <div class="bor-s"></div>
+                    <div class="data-approach-item pr-0 boder-right-none">
+                      <div class="amount-approach">50<span>
+                          Triệu
+                        </span></div>
+                      <p class="desc-approach" data-padding="20">
+                        người dùng App của 33 ngân hàng
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+              <div class="increase">
+                <div class="title-increase">
+                  Gia tăng doanh số bán hàng
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="desc-increase">
+                      <span>Tăng 50% khả năng&nbsp;</span>để chốt đơn hàng
+                    </div>
+                    <div class="desc-increase margin-top-15">
+                      <span>Giảm 90% tỷ lệ hủy đơn&nbsp;</span>hàng khi thanh toán COD
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-12 p-xl-0">
+                    <div class="desc-increase">
+                      Không cần phải có website, không cần kết nối kỹ thuật
+                    </div>
+                    <div class="desc-increase margin-top-15">
+                      Linh hoạt, dễ dàng và tiết kiệm chi phí
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-mobile-common">
+      <section class="section-two">
+        <div class="paymelink-desgined">
+          <div class="container">
+            <div class="row medium-row">
+              <div class="col-xl-7 col-lg-8 col-md-7 col-sm-12 col-12 image-background">
+                <div class="paymelink-desgined-left"><img width="3842" height="100%" alt="payme-page-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/paymepos/art-b-2-page@2x.jpg"></div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
+                <div class="paymelink-desgined-right">
+                  <h2 class="title-pme-desgined">
+                    <span>PayME Page</span><br>Tạo trang CHỐT SALE cực nhanh và hiệu quả
+                  </h2>
+                  <p class="description">
+                    PayME Page giúp SHOP tạo trang chốt sale với từng sự kiện khác nhau và khách hàng của Shop dễ
+                      dàng đặt hàng và thanh toán qua trang chốt sale của Shop.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-three">
+        <div class="paradigm">
+          <div class="container">
+            <div class="row medium-screen">
+              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-12 item-order-1">
+                <div class="paradigm-left">
+                  <div class="title-paradigm">
+                    <span>PayME Button</span><br>Tạo button "Thanh Toán" và copy paste vào website của bạn
+                  </div>
+                  <p class="description">Bạn tự tạo, tùy chỉnh button THANH TOÁN và gắn vào những nơi bạn đang bán hàng
+                    để khách hàng của bạn đặt hàng nhanh chóng và hiệu quả hơn.</p>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 item-order-2">
+                <div class="paradigm-right"><img width="2692" height="100%" alt="payme-button-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/paymepos/art-b-2-button1@2x.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <section class="section-four">
+    <div class="section-four-background"></div>
+    <div class="container">
+      <h2 class="title-method">3 bước tạo link để thanh toán</h2>
+      <div class="description">Tạo và gửi Link yêu cầu thanh toán cho khách hàng ngay cả khi bạn đang Livestream hay khi
+        bán hàng trên Facebook, Tiktok, Instagram,...</div>
+      <div class="row">
+        <div class="progressBar w-100">
+          <div class="col-xl-4 col-lg-4">
+            <div class="point" data-line="true">
+              <div class="bullet"><img width="30" height="30" alt="bullet-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/paymepos/icon-radius.png"></div>
+              <div class="content">
+                <p>Bước 1</p>
+                <div class="title_step">Tạo link thanh toán PayME</div>
+                <div class="sub_title" data-width="true" data-padding="20">Tạo link yêu cầu thanh toán chỉ với 1 click.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="point" data-line="true">
+              <div class="bullet"><img width="30" height="30" alt="bullet-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/paymepos/icon-radius.png"></div>
+              <div class="content">
+                <p>Bước 2</p>
+                <div class="title_step">Chia sẻ và gửi link</div>
+                <div class="sub_title" data-fix-width="true">Chia sẻ link thanh toán cho khách hàng qua Email, SMS,
+                  Facebook và các mạng xã hội khác.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="point">
+              <div class="bullet"><img width="30" height="30" alt="bullet-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/paymepos/icon-radius.png"></div>
+              <div class="content">
+                <p>Bước 3</p>
+                <div class="title_step">Nhận tiền</div>
+                <div class="sub_title" data-width="true">Nhận tiền về tài khoản ngân hàng ngay tức thì.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="button-center btn-hover__push"><a class="button-joinIn" href="https://mc.payme.vn/signup" target="_blank">
+            Đăng ký để tăng doanh thu ngay !
+          </a></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-five">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Phương thức thanh toán
+        </h2>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="method-group">
+              <div class="method-item">
+                <p class="method-item__title">
+                  Thẻ ATM nội địa
+                </p>
+                <div class="method-item__bank" data-type="napas"><i class="fas fa fa-chevron-down icon-drop-down"></i>
+                </div>
+              </div>
+              <div class="method-item">
+                <p class="method-item__title">
+                  Thẻ tín dụng
+                </p>
+                <div class="method-item__bank">
+                  <div class="bank__cover-image"><img width="100%" height="100%" alt="bank-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/Credit/visa/card.png" class="bank-image"></div>
+                  <div class="bank__cover-image"><img width="100%" height="100%" alt="bank-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/Credit/master/card.png" class="bank-image"></div>
+                  <div class="bank__cover-image"><img width="100%" height="100%" alt="bank-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/Credit/jcb/card.png" class="bank-image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="method-group">
+              <div class="method-item">
+                <p class="method-item__title">
+                  QR ngân hàng
+                </p>
+                <div class="method-item__bank" data-type="qr"><i class="fas fa fa-chevron-down icon-drop-down"></i>
+                </div>
+              </div>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-six">
+    <div class="section-six-bg"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="payme-link-connect">
+            <h2 class="section-title"><span class="highlight-text">
+                Một kết nối duy nhất
+              </span><br>
+              cho tất cả phương thức thanh toán
+            </h2>
+            <ul class="connect__desc">
+              <li class="desc__item">
+                Không cần biết code vẫn dễ dàng tích hợp thanh toán trong 5 phút. 
+              </li>
+              <li class="desc__item">
+                Bảo mật PCI DSS đạt tiêu chuẩn quốc tế.
+              </li>
+              <li class="desc__item">
+                Đã sẵn sàng tích hợp trên các nền tảng Facebook, Wordpress, Woocommerce, Magento, Shopify,
+                  Arastta, Prestashop, WIX, WHMCS, CS Cart, Easy Digital Downloads,…
+              </li>
+            </ul>
+            <div class="connect-platform"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/wordpress/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/woo/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/magento/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/cscart/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/opencart/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/arastta/bitmap.png" class="connect-platform__img"><img width="100%" height="100%" alt="connect-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/presta/bitmap.png" class="connect-platform__img"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="position-relative" style="pointer-events: none">
+            <div class="cover-lottie"><svg lazy-image="image" lazy-image-type="image" class="lottie-player" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 787" width="770" height="787" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; content-visibility: visible">
+                <g clip-path="url(#__lottie_element_2)">
+                  <g mask="url(#__lottie_element_6)" style="display: block">
+                    <g class="bg-anim" transform="matrix(1,0,0,1,8,0)" opacity="1">
+                      <image width="754px" height="715px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-1.png"></image>
+                    </g>
+                  </g>
+                  <g class="phone-anim" transform="matrix(1,0,0,1,303,91)" opacity="0.9999999905735113" style="display: block">
+                    <image width="306px" height="565px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-3.png"></image>
+                    <image width="461px" height="155px" y="500" x="-65" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-2.png"></image>
+                  </g>
+                  <g class="bank-list" transform="matrix(1,0,0,1,243,172.5)" opacity="1" style="display: block">
+                    <image width="474px" height="420px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-4.png"></image>
+                    <image width="376px" height="305px" x="35" y="45" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-5.png"></image>
+                  </g>
+                  <g class="icons-anim" transform="matrix(1,0,0,1,114,266)" opacity="1" style="display: block">
+                    <image width="182px" height="199px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-6.png"></image>
+                  </g>
+                  <g class="icons-anim" transform="matrix(1,0,0,1,687,316.5)" opacity="1" style="display: block">
+                    <image width="74px" height="54px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-10.png"></image>
+                  </g>
+                  <g class="icons-anim" transform="matrix(1,0,0,1,266,72)" opacity="1" style="display: block">
+                    <image width="52px" height="57px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-8.png"></image>
+                  </g>
+                  <g class="icons-anim" transform="matrix(1,0,0,1,639,537.5)" opacity="1" style="display: block">
+                    <image width="86px" height="68px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-9.png"></image>
+                  </g>
+                  <g class="icons-anim" style="display: block" transform="matrix(1.1984226703643799,0,0,1.1984226703643799,80.05520629882812,228.55520629882812)" opacity="1">
+                    <image width="70px" height="70px" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/animations/payme_link_B5/json-png-7.png"></image>
+                  </g>
+                </g>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="extensions-group col-12">
+          <div class="extensions__item"><img alt="extensions-image" width="58" height="58" class="item__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/ic-1-b/ic-1-b-5.png">
+            <h3 class="item__title-name">
+              SDK thân thiện
+            </h3>
+            <p class="item__desc">
+              Thanh toán nhanh hơn, mượt hơn giúp tăng trải nghiệm của khách hàng, khách hàng không cần phải
+                chuyển đổi qua lại các ứng dụng để thanh toán.
+            </p>
+          </div>
+          <div class="extensions__item"><img alt="extensions-image" width="58" height="58" class="item__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/ic-2-b/ic-2-b-5.png">
+            <h3 class="item__title-name">
+              API tự động
+            </h3>
+            <p class="item__desc">
+              Kết nối thanh toán tự động qua API giúp bạn nhận thông báo tức thì và chủ động xử lý các quy trình
+                vận hành, đối soát và chăm sóc khách hàng.
+            </p>
+          </div>
+          <div class="extensions__item"><img alt="extensions-image" width="58" height="58" class="item__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/ic-3-b/ic-3-b-5.png">
+            <h3 class="item__title-name">
+              Hỗ trợ Plugin
+            </h3>
+            <p class="item__desc">
+              Hỗ trợ cài đặt Plugin trên mọi nền tảng giúp bạn tận dụng tối đa tính năng và sự tiện dụng của các
+                nền tảng mở.
+            </p>
+          </div>
+          <div class="extensions__item"><img alt="extensions-image" width="58" height="58" class="item__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/payme-link-v2/icon/ic-4-b/ic-4-b-5.png">
+            <h3 class="item__title-name">
+              Plug-and-pay
+            </h3>
+            <p class="item__desc">
+              Dễ dàng nhận thanh toán tức thì từ khách hàng mà không cần phải tích hợp kỹ thuật với các tính
+                năng PayME Link, PayME POS, PayME Button sẵn có.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+      <div id="idPendingBlockModal" class="modal fade" lazy-image="div" lazy-image-type="img">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-transparent">
+      <div class="modal-body p-0">
+        <div class="pending-block">
+          <a class="close-icon" href="#" data-dismiss="modal"></a>
+          <div class="pending-content">
+            <img class="pending-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/artwork-building.svg">
+            <p class="pending-text--highlight">Dịch vụ đang xây dựng</p>
+            <p class="pending-descriptions">
+              Hệ thống đang trong quá trình hoàn thiện, <br>
+              bạn vui lòng quay trở lại sau.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<footer>
+  <style>
+    .goog-te-banner-frame {
+      display: none;
+    }
+  </style>
+  <div id="footerv3">
+    <div class="container">
+      <div class="row">
+        <div class="top-footer w-100">
+          <div class="col-xl-3 col-md-2 col-12 links">
+            <p class="links__title">PAYME</p>
+            <div class="links__group">
+              <div class="links__item d-flex flex-column">
+                <a class="" href="/web/payme-pos"> PayME POS </a>
+                <a href="/web/paymelink"> PayME Link </a>
+                <a href="/web/payout"> PayOut </a>
+                <a href="/web/payme-subscription"> PayME Subscription </a>
+              </div>
+              <!-- <div class="links__item d-flex flex-column">
+
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-4 col-12 links">
+            <p class="links__title">THÔNG TIN</p>
+            <div class="links__group">
+              <div class="links__item">
+                <a href="/web/hoi-dap"> Hỏi đáp </a>
+                <a href="/web/bieu-phi-vi-dien-tu"> Biểu phí Ví điện tử </a>
+                <!-- <a href="/web/bieu-phi-cong-thanh-toan">
+                  Biểu phí Cổng thanh toán
+                </a> -->
+                <a href="/web/tin-tuc"> Báo chí </a>
+              </div>
+              <div class="links__item">
+                <a href="https://docs.payme.vn/" target="_blank">
+                  Tài liệu kỹ thuật
+                </a>
+                <a href="/web/ho-tro"> Liên hệ hỗ trợ </a>
+                <a href="/web/tuyen-dung"> Tuyển dụng </a>
+                <a href="/web/lien-he"> Liên hệ </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5 col-md-6 col-12 contacts">
+            <p class="contacts__title">TẢI ỨNG DỤNG VÍ PAYME</p>
+            <div class="contacts__download-button">
+              <a id="android-button-id-footer " class="android-button" href="https://play.google.com/store/apps/details?id=com.payme.app.user">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/button-googleplay-footer.svg " alt="" class="btn-app-download btn-hover__push">
+              </a>
+              <a id="apple-button-id-footer" class="apple-button" href="https://apps.apple.com/us/app/id1492981630">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/button-applestore-footer.svg" alt="" class="btn-app-download btn-hover__push">
+              </a>
+
+              <img id="images-qr-id" width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/qrcode-dlpayme.png" alt="" class="qr-download" style="cursor: pointer">
+            </div>
+
+            <!-- address -->
+            <div class="contact address mt-3">
+              <div class="image-icon-mobile">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-location.svg" alt="">
+              </div>
+              <a href="https://www.google.com/maps/place/160+%C4%90.+B2,+An+L%E1%BB%A3i+%C4%90%C3%B4ng,+Qu%E1%BA%ADn+2,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7747193,106.7297668,19.08z/data=!4m13!1m7!3m6!1s0x317525f732cde7db:0xb4fa6cf0663eb12b!2zMTYwIMSQLiBCMiwgQW4gTOG7o2kgxJDDtG5nLCBRdeG6rW4gMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!3b1!8m2!3d10.7749806!4d106.729877!3m4!1s0x317525f732cde7db:0xb4fa6cf0663eb12b!8m2!3d10.7749806!4d106.729877?hl=en" target="_blank" class="text link-map ml-3">
+                <span>Liên hệ trực tiếp tại văn phòng PayME </span> 152-154-156-158-160 Đường B2, An Lợi Đông, TP. Thủ
+                Đức, TP.HCM</a>
+              <div class="image">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-location.svg" alt="">
+              </div>
+            </div>
+            <div class="contact address mt-3">
+              <span style="font-size: 12px; font-weight: 100">Hoặc các hình thức gián tiếp</span>
+            </div>
+            <div class="contact contact-phone">
+              <div class="image-icon-mobile">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-phone.svg" alt="">
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="text phone hotline-mobi ml-3">
+                  <span>Tổng đài 24/7 : </span>
+                  <a href="tel:1900886665">1900 88 66 65</a>
+                </div>
+
+                <div class="text phone hotline-mobi ml-3">
+                  <span>Trang web : </span>
+                  <a href="https://payme.vn">payme.vn</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact contact-phone">
+              <div class="image-icon-mobile">
+                <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-phone.svg" alt="">
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="text phone hotline-mobi ml-3">
+                  <span>Thư điện tử : </span>
+                  <a href="mailto:hotro@payme.vn">hotro@payme.vn</a>
+                </div>
+
+                <div class="text phone hotline-mobi ml-3">
+                  <span>Fanpage : </span>
+                  <a href="https://www.facebook.com/paymecorp"> PayME</a>
+                </div>
+              </div>
+
+              <!-- <div class="image">
+                <img width="100%" height="100%"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  lazy-src="/web/images/open1/icon-phone.svg" alt="" />
+              </div> -->
+            </div>
+
+            <div class="contact">
+              <div class="time-contact-info">
+                <p>Thời gian hỗ trợ : <span>24/7</span></p>
+              </div>
+            </div>
+            <div class="icon d-xl-flex mr-auto icon-mobile">
+              <a class="mr-2" href="https://www.facebook.com/paymecorp" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-facebook.png" alt=""></a>
+
+              <!-- <a
+                  class="mr-2"
+                  href="https://www.instagram.com/paymevidientu/"
+                  target="_blank"
+                  ><img src="/web/images/open1/icon-socialmedia-intsa.png" alt=""
+                /></a> -->
+              <a class="mr-2" href="https://www.youtube.com/channel/UCXUoFOGEdRwUtIJS4C_cq9g" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-youtube.png" alt="mobile payme youtube logo"></a>
+              <!-- <a
+                  class="mr-2"
+                  href="https://twitter.com/payme_vi"
+                  target="_blank"
+                  ><img src="/web/images/open1/icon-socialmedia-ti.png" alt=""
+                /></a> -->
+              <a class="mr-2" href="https://www.pinterest.com/vipayme/_saved/" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-pinterest.png" alt=""></a>
+              <!-- <a href="https://www.tiktok.com/@vipayme?" target="_blank"
+                  ><img
+                    src="/web/images/open1/icon-socialmedia-tiktok.png"
+                    alt=""
+                /></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="row copyright">
+        <div class="d-inline-block p-0" id="google_translate_element"></div>
+
+        <div class="col-xl-5 col-7 left-side m-auto">
+          <div class="d-flex align-items-center" style="flex-direction: row">
+            <a class="logo" href="/web/home"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/new-logo.svg" alt=""></a>
+            <!-- fix-pad -->
+            <p class="">© 2020 Ví Điện Tử PayME.</p>
+          </div>
+          <div class="block-mobile">
+            <a class="d-sm-block text-left mr-2 a-use" href="/web/dieu-khoan-su-dung-payme">
+              Điều khoản sử dụng
+            </a>
+            <a class="d-sm-block text-left mr-2 a-use" href="/web/trang/chinh-sach-bao-mat-payme">
+              Chính sách bảo mật
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-7 col-12 right-side m-auto">
+          <div class="icon d-xl-flex ml-auto">
+            <a href="https://www.facebook.com/paymecorp" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-facebook.png" alt="Payme Facebook"></a>
+            <!-- <a href="https://www.instagram.com/paymevidientu/" target="_blank"
+                ><img src="/web/images/open1/icon-socialmedia-intsa.png" alt=""
+              /></a> -->
+            <a href="https://www.youtube.com/channel/UCXUoFOGEdRwUtIJS4C_cq9g" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-youtube.png" alt="Payme Youtube"></a>
+            <!-- <a href="https://twitter.com/payme_vi" target="_blank"
+                ><img src="/web/images/open1/icon-socialmedia-ti.png" alt=""
+              /></a> -->
+            <a href="https://www.pinterest.com/vipayme/_saved/" target="_blank"><img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-src="/web/images/open1/icon-socialmedia-pinterest.png" alt="Payme Pinterest"></a>
+            <!-- <a href="https://www.tiktok.com/@vipayme?" target="_blank"
+                ><img src="/web/images/open1/icon-socialmedia-tiktok.png" alt=""
+              /></a> -->
+          </div>
+          <div class="policy">
+            <a class="d-xl-block text-center mr-0 a-use" href="/web/dieu-khoan-su-dung-payme">
+              Điều khoản sử dụng
+            </a>
+            <a class="d-xl-block text-center mr-3 a-use" href="/web/trang/chinh-sach-bao-mat-payme">
+              Chính sách bảo mật
+            </a>
+          </div>
+          <!-- <button class="btn-pci-dss border-0 p-2">
+            <img width="100%" height="100%"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              lazy-src="/web/images/open1/icon-pci.svg" alt="..." />
+          </button> -->
+          <div id="template-widget" class="template-widget btn-pci-dss"></div>
+          <script src="https://assurance.sysnetgs.com/assurancecard/be8e7fbc4499573f9c0088ceb2764691264d06d3b58735b5d60c412d5fa84f6f/cardJs" type="text/javascript"></script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-sm" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="idModalAlert">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center">Thông báo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="message-alert text-center text-center"></p>
+          <div class="text-center w-100">
+            <button type="button" class="btn btn-success w-100" data-dismiss="modal" aria-label="Close">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script load-type="before" type="lazyloadscript" data-script-type="text/javascript">
+    function googleTranslateElementInit() {
+      const url = window.location.href;
+      const objUrl = new URL(url);
+
+      if (objUrl.searchParams.get('lang')) {
+        const gg = new google.translate.TranslateElement(
+          { pageLanguage: "vi" },
+          "google_translate_element"
+        );
+        setTimeout(() => {
+          var select = document.querySelector('select.goog-te-combo');
+          select.value = objUrl.searchParams.get('lang');
+          select.dispatchEvent(new Event('change'));
+        }, 1000);
+      }
+    }
+  </script>
+  <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit"></script>
+</footer><div id="widget-preview" class="ac-widget"></div> <style>
+  .contract-form input,
+  .contract-form select,
+  .contract-form select option,
+  .contract-form input.error .contract-form select.error {
+    color: #142531;
+    font-family: revert-layer;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+<script src="/web/demo-payment/fp.js "></script>
+<section id="contactBody" class="contactBody" lazy-image="section" lazy-image-type="img">
+  <img src="/web/images/group.webp" class="Group" alt="Chat image">
+
+  <div class="contract-form">
+    <div class="header-banner">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/bg-xanh@3x.png" alt="banner-form">
+    </div>
+    <div class="content-banner">
+      <form class="body-form" id="idContact" novalidate="">
+        <div class="inputs-group">
+          <div class="form-title">
+            <div id="Tab1" name="Tab1" onclick="onchangeTab(false)" class="tab">
+              <label>Chưa có tài khoản</label>
+              <label id="Underline1" class="underline"> </label>
+            </div>
+            <div id="Tab2" name="Tab2" onclick="onchangeTab(true)" class="tab">
+              <label>Đã có tài khoản</label>
+              <label id="Underline2" class="underline"> </label>
+            </div>
+          </div>
+          <div id="idname" class="form-group">
+            <label>Họ &amp; Tên<span class="text-danger"> *</span></label>
+            <input placeholder="Nguyễn Văn A" name="fullname" id="fullname" type="text" oninput="onchangeName(this)" autocomplete=" off">
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại/Email liên hệ
+              <span class="text-danger"> *</span>
+            </label>
+            <input placeholder="Nhập số điện thoại/Email đăng ký" name="userContact" type="text" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label>Nội dung liên hệ
+              <span class="text-danger"> *</span>
+            </label>
+            <label class="select-input" for="activeSelectCate">
+              <input type="checkbox" hidden="" id="activeSelectCate">
+              <select class="form-control " name="catType" id="catType" onchange="onchangeCatype(this)">
+                <option selected="" hidden="" value="">Chọn loại hỗ trợ </option>
+              </select>
+
+              <span>
+                <i class=" fas fa-caret-down"></i>
+              </span>
+            </label>
+          </div>
+          <div id="transactionCode" style="display:none" class="form-group">
+            <label>Mã giao dịch <span class="text-danger"> *</span></label>
+            <input placeholder="Nhập mã giao dịch" name="transactionCode" maxlength="50" autocomplete="off">
+          </div>
+          <div class="form-group form-input-textarea">
+            <label>Mô tả
+
+              <span class="text-danger"> *</span>
+            </label>
+            <div class="textarea-input">
+              <textarea name="description" maxlength="1500" placeholder="Mô tả vấn đề cần hỗ trợ của bạn"></textarea>
+              <span class="text-limit"><span>0</span>/1500 ký tự</span>
+            </div>
+          </div>
+          <div id="idsendfile" class="form-group form-input-upload">
+            <label>Đính kèm hình ảnh </label>
+            <p class="d-none img-uploaded">[]</p>
+            <div class="upload-input">
+              <label class="btn-upload">
+                <img src="/web/images/upload-cloud.svg" alt="upload-img">
+                <input class="file-upload" type="file" name="fileinput" id="file-input" accept=".jpg,.jpeg,.png,.xlsx,.doc,.docx,.pdf,.csv,.xls" multiple="" hidden="">
+              </label>
+              <span class="text-limit">Hỗ trợ *png, *jpg, *pdf,... không quá 20MB</span>
+
+            </div>
+            <div class="preview-group"></div>
+          </div>
+          <div style="margin-top: 0.5rem">
+            <div id="recaptcha" class="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="expiredCaptachCallback" data-sitekey="6Lcu370UAAAAALTLGhVkTSbDAWrdXbrwllJIGMbq">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn--success btn-submit">
+            <p>Gửi thông tin</p>
+            <i class="fas fa-spinner fa-pulse loading-icon"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End contact banner -->
+
+  <!-- banner success -->
+  <div id="success-banner">
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/bg-xanh@3x.png" alt="banner-form">
+    <div class="contentLine">
+      <img class="img" src="/web/images/icon_message.png">
+      <p id="titleResult">
+        Gửi thông tin thành công!
+      </p>
+    </div>
+    <div class="contentMessage" id="contentResult">
+      Cảm ơn bạn đã để lại thông tin, chúng tôi sẽ phản hồi lại bạn trong thời gian sớm nhất. 
+    </div>
+    <div class="btn-group">
+      <button class="btn btn--success btn-submit" onclick="closeBannerResult()">
+        <p>Đóng</p>
+        <i class="fas fa-spinner fa-pulse loading-icon"></i>
+      </button>
+    </div>
+
+  </div>
+
+  
+  <div class="upload-link d-none">
+    https://static.payme.vn
+  </div>
+</section>          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-574GVJK" height="0" width="0"
+              style="display: none; visibility: hidden"></iframe></noscript>
+          <div data-pushbar-id="mypushbar1" data-pushbar-direction="top" id="mypushbar" class="header">
+            <div class="logo-image">
+              <a href="home"><img width="100%" height="100%" src="/web/images/open1/new-logo.svg" class="logo" alt="logo-fin-me" srcset=""></a>
+            </div>
+            <div data-pushbar-close="" class="close-menu-btn" data-pushbar-target="mypushbar1">
+              <span class="close-menu-btn__burger"> </span>
+            </div>
+            <ul class="pushbar-menu">
+              <li class="pushbar-menu-item ">
+                <a href=" /web/paymelink"> PayME Link </a>
+              </li>
+
+              <li class="pushbar-menu-item ">
+                <a href=" /web/payme-pos"> PayME POS </a>
+              </li>
+
+              <li class="pushbar-menu-item ">
+                <a href=" /web/payout"> PayOut </a>
+              </li>
+
+              <li class="pushbar-menu-item ">
+                <a href=" /web/payme-subscription">
+                  PayME Subscription
+                </a>
+              </li>
+
+              <!-- <li class="pushbar-menu-item ">
+                <a href=" /web/payme-credit">
+                  PayME Credit
+                </a>
+              </li> -->
+
+              <li id="pushbar-solution" class="pushbar-menu-item ">
+                <div class="btn-item">
+                  <div class="pushbar-title">Solution</div>
+                  <i class="fas fa fa-chevron-right"></i>
+                </div>
+
+                <div class="list-menu" lazy-image="div" lazy-image-type="img">
+                  <a href="/web/paynet" class="item-drop">
+                    <div class="icon-menu">
+                      <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/menu/icon-payout.svg" alt="">
+                    </div>
+                    <div class="content-menu ">
+                      <span class="d-flex align-items-center">
+                        Whitelabel wallet
+                        <span><i class="icon-left fas fa-arrow-right"></i></span></span>
+                      <span> Ví điện tử mở cho doanh nghiệp của bạn </span>
+                    </div>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#idPendingBlockModal" class="item-drop">
+                    <div class="icon-menu">
+                      <img width="100%" height="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" lazy-url="/web/images/menu/icon-paymepage.svg" alt="">
+                    </div>
+                    <div class="content-menu ">
+                      <span class="d-flex align-items-center">
+                        Whitelabel gateway
+                        <span><i class="icon-left fas fa-arrow-right"></i></span></span>
+                      <span> Phát triển cổng thanh toán bằng PayME SDK </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+          <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+          <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+          <link rel="stylesheet" href="/web/css/open1/footerv3.css" type="text/css">
+
+          <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/header.js"></script>
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/footer.js"></script>
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/bootstrap.min.js"></script>
+          <!-- <script
+      load-type="async"
+      type="lazyloadscript"
+      data-script-type="text/javascript"
+      src="/web/js/pushbar.js"
+    ></script> -->
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/script.js"></script>
+
+          <!-- Google Tag Manager -->
+          <!-- Google Tag Manager -->
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PDWJQFD");
+    </script>
+          <!-- End Google Tag Manager -->
+
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDWJQFD" height="0" width="0"
+              style="display: none; visibility: hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
+
+          <!-- AppsFlyer web SDK for Smart Banners only -->
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript">
+      !(function (t, e, n, s, a, c, i, o, p) {
+        (t.AppsFlyerSdkObject = a),
+          (t.AF =
+            t.AF ||
+            function () {
+              (t.AF.q = t.AF.q || []).push(
+                [Date.now()].concat(Array.prototype.slice.call(arguments))
+              );
+            }),
+          (t.AF.id = t.AF.id || i),
+          (t.AF.plugins = {}),
+          (o = e.createElement(n)),
+          (p = e.getElementsByTagName(n)[0]),
+          (o.async = 1),
+          (o.src =
+            "https:/websdk.appsflyer.com?" +
+            (c.length > 0 ? "st=" + c.split(",").sort().join(",") + "&" : "") +
+            (i.length > 0 ? "af_id=" + i : "")),
+          p.parentNode.insertBefore(o, p);
+      })(window, document, "script", 0, "AF", "banners", {
+        banners: { key: "52427520-6552-42ce-bb76-6da2fc977fc3" },
+      });
+      AF("banners", "showBanner");
+    </script>
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-S2JXHNYVH6"></script>
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript">
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S2JXHNYVH6");
+    </script>
+
+          <!-- pushbar -->
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript">
+      const pushbar = new Pushbar({
+        blur: true,
+        overlay: true,
+      });
+
+      $("#sideNav")
+        .on("pushbar_opening", (ele, id) => {
+          $(".btn-close-mobilemenu").removeClass("d-none");
+          $(".btn-mobilemenu").addClass("d-none");
+        })
+        .on("pushbar_closing", () => {
+          $(".btn-close-mobilemenu").addClass("d-none");
+          $(".btn-mobilemenu").removeClass("d-none");
+        });
+
+      $(".btn-close-mobilemenu").click(() => {
+        pushbar.close();
+      });
+    </script>
+
+          <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://sealserver.trustwave.com/seal.js?code=812bae744cdf40839b1516c729172425"></script>
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+          <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+
+          <script load-type="async" type="lazyloadscript" data-script-type="text/javascript">
+      $(document).on("click", ".pushbar-menu-item", function () {
+        const toggle = $(this).children("").hasClass("active");
+        $(".pushbar-menu-item").children(".list-menu").removeClass("active");
+        $(".pushbar-menu-item")
+          .children(".btn-item")
+          .find(".fas")
+          .removeClass("fa-chevron-up");
+        const listMenu = $(this).find(".list-menu");
+        const icon = $(this).children(".btn-item").find(".fas");
+        if (toggle) {
+          listMenu.removeClass("active");
+          icon.removeClass("fa-chevron-up");
+        } else {
+          listMenu.addClass("active");
+          icon.addClass("fa-chevron-up");
+        }
+      });
+    </script>
+
+          
+            <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/parsley.min.js"></script>
+            
+            <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/pages/paymeLink.js"></script>
+            
+              
+                <script load-type="before" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/lazyload.js"></script>
+                <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+                <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/jquery.serializejson.min.js"></script>
+                <script load-type="async" type="lazyloadscript" data-script-type="text/javascript" src="/web/js/contact.js "></script>
+                <link lazy-type="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+                <script>
+                  // const loading = document.querySelector(".first-loading");
+                  // loading.style = "display: none";
+                  document.body.style = "overflow: auto;";
+                  window.addEventListener("DOMContentLoaded", (e) => {
+                    document.querySelector("img.image-static-preview").src =
+                      "/web/images/payme-link-v2/art-b-1.png";
+                    setTimeout(() => {
+                      const link = document.createElement("link");
+                      link.href =
+                        "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap";
+                      link.rel = "stylesheet";
+                      link.crossOrigin = true;
+
+                      document.body.appendChild(link);
+                      setTimeout(() => {
+                        le();
+                      }, 3000);
+                    }, 100);
+                  });
+                </script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet" crossorigin="true"></body></html>
